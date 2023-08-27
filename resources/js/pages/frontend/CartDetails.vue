@@ -27,7 +27,7 @@
                                     </td>
                                     <td class="price"><span>${{ cartItem[2] }}</span></td>
                                     <td class="total_price"><span>${{ parseInt(cartItem[2] * cartItem[3]) }}</span></td>
-                                    <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                    <td class="action"><a href="#" @click.prevent="removePro(cartItem[4], cartItem[3])" ><i class="icon_close"></i></a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -93,7 +93,6 @@
         data(){
             return {
                 cartItems:[],
-                boxQty : 0
             }
         },
         mounted(){
@@ -114,6 +113,14 @@
             },
             getCartValue(id, qty){
                 this.$globalAddToCart(id,qty)
+            },
+            removePro(id,qty){
+                localStorage.removeItem(id)
+                this.cartItems = []
+                let sum = parseInt(localStorage.getItem('cartQty'))-qty
+                localStorage.setItem('cartQty', sum)
+                this.$globalAddToCart(null,null)
+                this.getCartItems()
             }
         }
     }
