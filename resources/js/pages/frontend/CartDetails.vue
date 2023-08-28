@@ -35,10 +35,10 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row justify-content-end">
 
-                <!-- Coupon Discount -->
-                <div class="col-12 col-lg-6">
+                <!-- Coupon Discount(latter implement) -->
+                <!-- <div class="col-12 col-lg-6">
                     <div class="coupon-discount mt-70">
                         <h5>COUPON DISCOUNT</h5>
                         <p>Coupons can be applied in the cart prior to checkout. Add an eligible item from the booth of the seller that created the coupon code to your cart. Click the green "Apply code" button to add the coupon to your order. The order total will update to indicate the savings specific to the coupon code entered.</p>
@@ -47,17 +47,16 @@
                             <button type="submit">APPLY COUPON</button>
                         </form>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Cart Totals -->
                 <div class="col-12 col-lg-6">
                     <div class="cart-totals-area mt-70">
-                        <h5 class="title--">Cart Total</h5>
                         <div class="subtotal d-flex justify-content-between">
-                            <h5>Subtotal</h5>
-                            <h5>$9.99</h5>
+                            <h5>CART TOTAL</h5>
+                            <h5>${{ cartTotal }}</h5>
                         </div>
-                        <div class="shipping d-flex justify-content-between">
+                        <!-- <div class="shipping d-flex justify-content-between">
                             <h5>Shipping</h5>
                             <div class="shipping-address">
                                 <form action="#" method="post">
@@ -77,9 +76,9 @@
                         <div class="total d-flex justify-content-between">
                             <h5>Total</h5>
                             <h5>$9.99</h5>
-                        </div>
+                        </div> -->
                         <div class="checkout-btn">
-                            <a href="#" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
+                            <router-link to="checkout" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</router-link>
                         </div>
                     </div>
                 </div>
@@ -93,6 +92,7 @@
         data(){
             return {
                 cartItems:[],
+                cartTotal:0
             }
         },
         mounted(){
@@ -102,17 +102,19 @@
             getCartItems()
             {
                 let itemKeys = Object.keys(localStorage)
+                this.cartTotal = 0
                 itemKeys.forEach(keys=>{
                     let itemValue = JSON.parse(localStorage.getItem(keys))
-                    console.log(keys)
                     if(!Number.isInteger(itemValue)){
-                        this.cartItems.push(itemValue)     
+                        this.cartItems.push(itemValue) 
+                        this.cartTotal += parseInt(itemValue[2])*itemValue[3]
                     }               
                 })
-                console.log(this.cartItems)
             },
             getCartValue(id, qty){
                 this.$globalAddToCart(id,qty)
+                this.cartItems = []
+                this.getCartItems()
             },
             removePro(id,qty){
                 localStorage.removeItem(id)

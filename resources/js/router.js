@@ -1,5 +1,6 @@
 import ProductView from './pages/frontend/ProductView.vue';
 import CartDetails from './pages/frontend/CartDetails.vue';
+import Checkout from './pages/frontend/Checkout.vue';
 import ProductEdit from './pages/ProductEdit.vue';
 import ProductIndex from './pages/ProductIndex.vue';
 import ProductCreate from './pages/ProductCreate.vue';
@@ -10,6 +11,11 @@ const routes = [
     path: '/',
     component: ProductView,
     name: 'ProductView'
+  },
+  {
+    path: '/checkout',
+    component: Checkout,
+    name: 'Checkout'
   },
   {
     path: '/order',
