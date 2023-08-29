@@ -2,3 +2,6 @@
 2.SHIPPING CHARGE
 3.PROCESS TO CHECKOUT
 4.INTEGRATE PAYMENT METHOD 
+
+
+https://stripe.com/docs/checkout/quickstart?client=next
