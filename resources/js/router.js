@@ -1,5 +1,6 @@
 import ProductView from './pages/frontend/ProductView.vue';
 import CartDetails from './pages/frontend/CartDetails.vue';
+import GetAddress from './pages/frontend/GetAddress.vue';
 import Checkout from './pages/frontend/Checkout.vue';
 import ProductEdit from './pages/ProductEdit.vue';
 import ProductIndex from './pages/ProductIndex.vue';
@@ -13,9 +14,15 @@ const routes = [
     name: 'ProductView'
   },
   {
-    path: '/checkout',
+    path: '/checkout/:total_charge',
+    name: 'checkout',
     component: Checkout,
-    name: 'Checkout'
+    props: true,
+  },
+  {
+    path: '/address',
+    component: GetAddress,
+    name: 'GetAddress'
   },
   {
     path: '/order',

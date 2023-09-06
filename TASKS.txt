@@ -5,3 +5,14 @@
 
 
 https://stripe.com/docs/checkout/quickstart?client=next
+
+make an order post route
+make shippingAddress route model(order_id,) 
+ADDRESS.vue
+Congres.vue
+
+
+
+After completing project
+make axios global that means no need to import in every pages
+stripe card make error message in every input field

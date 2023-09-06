@@ -78,7 +78,7 @@
                             <h5>$9.99</h5>
                         </div> -->
                         <div class="checkout-btn">
-                            <router-link to="checkout" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</router-link>
+                            <router-link :to="{ name: 'checkout', params: { total_charge: cartTotal } }" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</router-link>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Order;
 
 use App\Http\Controllers\Controller;
+use App\Models\Order;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -25,7 +26,7 @@ class OrderController extends Controller
      */
     public function create()
     {
-        //
+        dd('create');
     }
 
     /**
@@ -36,7 +37,12 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $order = new Order();
+        $order->status = 'paid';
+        $order->session_id = $request->token;
+        $order->total_price = $request->amount;
+        $order->save();
+        return true;
     }
 
     /**

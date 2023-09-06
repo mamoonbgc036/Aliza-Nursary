@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\Order\OrderController;
 use App\Http\Controllers\Product\ProductController;
 //use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
