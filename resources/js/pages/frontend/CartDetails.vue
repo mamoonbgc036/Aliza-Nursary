@@ -105,11 +105,14 @@
                 this.cartTotal = 0
                 itemKeys.forEach(keys=>{
                     let itemValue = JSON.parse(localStorage.getItem(keys))
-                    if(!Number.isInteger(itemValue)){
+                    console.log(keys)
+                    console.log(typeof(itemValue))
+                    if(!Number.isInteger(itemValue) && typeof(itemValue)!=='string'){
                         this.cartItems.push(itemValue) 
                         this.cartTotal += parseInt(itemValue[2])*itemValue[3]
                     }               
                 })
+                console.log(this.cartItems)
             },
             getCartValue(id, qty){
                 this.$globalAddToCart(id,qty)

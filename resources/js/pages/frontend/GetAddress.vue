@@ -12,10 +12,10 @@
         </div>
         <div class="mb-3">
             <label for="address" class="form-label">Address</label>
-            <textarea v-model="address" class="form-control" id="address" cols="30" rows="10" placeholder="Name&#10;House no.&#10;Village/Street&#10;City"></textarea>
+            <textarea v-model="address" class="form-control" id="address" cols="30" rows="10" placeholder="15 majid bari,Shittal jorna r/a,Oxygen,Chittagong"></textarea>
         </div>
         <div class="mb-3">
-            <input type="submit" class="btn btn-success" @click.prevent="storeAddress">
+            <input type="submit" class="btn btn-success text-end" @click.prevent="storeAddress">
         </div>       
     </div>
 </div>
@@ -35,14 +35,15 @@ export default{
         storeAddress(){
             let payload = {
                 name : this.name,
-                order_id: localStorage.getItem('order_id'),
+                order_id: JSON.parse(localStorage.getItem('order_id')),
                 phone: this.phone,
                 address: this.address
             }
             axios.post('customer_address', payload)
             .then(response=>{
-                alert(response.data)
                 const router = useRouter()
+                let addressPhone = this.name+','+this.phone+','+ this.address
+                localStorage.setItem('address', JSON.stringify(addressPhone))
                 this.$router.push('/customer_invoice')
             })
             .catch(errors=>{
@@ -52,3 +53,10 @@ export default{
     }
 }
 </script>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+</style>
