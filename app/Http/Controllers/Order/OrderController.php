@@ -42,7 +42,7 @@ class OrderController extends Controller
         $order->session_id = $request->token;
         $order->total_price = $request->amount;
         $order->save();
-        return true;
+        return $order;
     }
 
     /**

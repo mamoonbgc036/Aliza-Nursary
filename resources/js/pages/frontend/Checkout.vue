@@ -82,6 +82,7 @@ export default {
     processPayment(token, amount) {
       axios.post('/order', { token, amount })
         .then(response => {
+          localStorage.setItem('order_id', response.data.id)
           const router = useRouter();
           this.$router.push('/address');
         })

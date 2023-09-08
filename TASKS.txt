@@ -7,7 +7,7 @@
 https://stripe.com/docs/checkout/quickstart?client=next
 
 make an order post route
-make shippingAddress route model(order_id,) 
+make shippingAddress route model(order_id, customer_id, address) 
 ADDRESS.vue
 Congres.vue
 
@@ -16,3 +16,9 @@ Congres.vue
 After completing project
 make axios global that means no need to import in every pages
 stripe card make error message in every input field
+arrange menus in different situation. like when customer in shipping address page, there is no need to have cart menu.
+convert it to VITE
+test const router = new useRouter() whether router variable is required
+
+
+

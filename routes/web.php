@@ -1,10 +1,12 @@
 <?php
 
-use App\Http\Controllers\Admin\UserController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\Product\ProductController;
-//use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\Admin\UserController;
+//use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Order\OrderController;
+use App\Http\Controllers\Product\ProductController;
+use App\Http\Controllers\ShippingAddressController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,5 +42,10 @@ Route::resource('category', CategoryController::class);
 //Product Management
 Route::resource('product', ProductController::class);
 Route::resource('order', OrderController::class);
+
+// Customer Shipping Address route
+Route::post('/customer_address', [ShippingAddressController::class, 'store']);
+Route::get('/customer_address', [ShippingAddressController::class, 'index'])->name('customer_address');
+
 
 require __DIR__.'/auth.php';

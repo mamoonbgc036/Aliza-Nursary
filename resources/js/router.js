@@ -1,5 +1,6 @@
 import ProductView from './pages/frontend/ProductView.vue';
 import CartDetails from './pages/frontend/CartDetails.vue';
+import Customer_Invoice from './pages/frontend/Customer_Invoice.vue';
 import GetAddress from './pages/frontend/GetAddress.vue';
 import Checkout from './pages/frontend/Checkout.vue';
 import ProductEdit from './pages/ProductEdit.vue';
@@ -18,6 +19,11 @@ const routes = [
     name: 'checkout',
     component: Checkout,
     props: true,
+  },
+  {
+    path: '/customer_invoice',
+    component: Customer_Invoice,
+    name: 'Customer_Invoice'
   },
   {
     path: '/address',
