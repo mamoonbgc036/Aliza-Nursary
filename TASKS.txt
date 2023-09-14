@@ -14,11 +14,39 @@ Congres.vue
 
 
 After completing project
+rename variable and function name so that it make sense. and use comments
 make axios global that means no need to import in every pages
+know the neccessity of postcss, lodesh and other by simply remove the package
 stripe card make error message in every input field
 arrange menus in different situation. like when customer in shipping address page, there is no need to have cart menu.
 convert it to VITE
 test const router = new useRouter() whether router variable is required
 
+FOR README
+
+PROJECT TITLE : 
+Laravel_Vue_Ecom is a fictional online shopping marketplace for tree. It main purpose is to decorate every home with green in urban area. It does this by makeing buying tree and all services related to it easy only with a click of your smart phone.
+
+PROJECT DESCRIPTION:
+The moto of the project is "click and get trees top and services at your door". It has every features an modern online marketplace have.
+It has following features 
+1.Login and logout features
+2.Seller can add product(Tree)
+3.Seller can add images as many as they want
+4.He can view, edit and delete products.
+5.He can see orders and turn the order in different stages.
+6.He will have a nice dashboard.
+7.A nice landing pages 
+8.Online cart system
+9.Online payment with stripe 
+
+PROJECT DEMO:
+
+INSTALLATION AND USAGE:
+
+MUMIN MAMOON:
+1.FIVE PRAYER
+2.STOP WO. SEE 
+3.STOP LIE, WADA
 
 

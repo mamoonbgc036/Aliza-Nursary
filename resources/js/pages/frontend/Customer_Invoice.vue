@@ -32,7 +32,7 @@
             </thead>
             <tbody>
               <tr v-for="(cartItem, index=1) in cartItems" :key="index">
-                <td>{{ index }}</td>
+                <td>{{ index+1 }}</td>
                 <td>{{ cartItem[0] }}</td>
                 <td>${{ cartItem[2] }}</td>
                 <td>{{ cartItem[3] }}</td>
@@ -100,6 +100,7 @@
 
         // Open the PDF in a new tab
         window.open(pdfDataUri, '_blank');
+        localStorage.clear();
       },
       
       getCartItems()
