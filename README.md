@@ -15,13 +15,8 @@ It has following features
 9. Online payment with stripe
 
 ## Project Demo:
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
 | Shop Page | Cart Page |
 | ----------- | ----------- |
-| <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/imageOne.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/imageOne.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> |
+| <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/imageOne.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/imagethree.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> |
 
 
