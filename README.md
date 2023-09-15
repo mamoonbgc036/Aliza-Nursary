@@ -15,8 +15,12 @@ It has following features
 9. Online payment with stripe
 
 ## Project Demo:
-| Shop Page | Cart Page |
-| ----------- | ----------- |
-| <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/imageOne.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/imagethree.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> |
+| Shop Page | Cart Page | Stripe |
+| ----------- | ----------- | ----------- |
+| <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/shop.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/cart.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/stripe.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> |
+
+| Invoice Page | Pdf Page | Admin |
+| ----------- | ----------- | ----------- |
+| <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/invoice.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/pdf.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/admin.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> |
 
 
