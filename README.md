@@ -1,3 +1,11 @@
+## Project Demo:
+| Shop Page | Cart Page | Stripe |
+| ----------- | ----------- | ----------- |
+| <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/shop.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/cart.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/stripe.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> |
+
+| Invoice Page | Pdf Page | Admin |
+| ----------- | ----------- | ----------- |
+| <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/invoice.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/pdf.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/admin.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> |
 ## PROJECT TITLE : 
 Laravel_Vue_Ecom is a fictional online shopping marketplace for tree. It main purpose is to decorate every home with green in urban area. It does this by makeing buying tree and all services related to it easy only with a click of your smart phone.
 
@@ -13,14 +21,5 @@ It has following features
 7. A nice landing pages 
 8. Online cart system
 9. Online payment with stripe
-
-## Project Demo:
-| Shop Page | Cart Page | Stripe |
-| ----------- | ----------- | ----------- |
-| <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/shop.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/cart.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/stripe.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> |
-
-| Invoice Page | Pdf Page | Admin |
-| ----------- | ----------- | ----------- |
-| <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/invoice.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/pdf.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> | <img src="https://github.com/mamoonbgc036/Laravel_Vue_Ecom/blob/main/public/assets/img/admin.png" alt="Image Alt Text" style="width: 350px; height: 350px; display: inline;"> |
 
 
